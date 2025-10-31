@@ -19,7 +19,7 @@ source venv/bin/activate # for linux
 
 Устанавливаем все зависимости:
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121 --extra-index-url https://pypi.org/simple
 ```
 
 Запускаем

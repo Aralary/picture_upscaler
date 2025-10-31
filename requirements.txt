@@ -1,0 +1,14 @@
+# === PyTorch stack (CUDA 12.1, RTX 4080, Python 3.12) ===
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# === Updated Real-ESRGAN fork (совместим с torchvision>=0.20) ===
+git+https://github.com/upscayl/Real-ESRGAN.git
+basicsr==1.4.2
+
+# === Image processing ===
+Pillow==10.3.0
+
+# === Utilities ===
+tqdm==4.66.4

@@ -6,10 +6,12 @@ https://github.com/xinntao/Real-ESRGAN/blob/master/docs/model_zoo.md
 
 
 # Usage
+Создаем виртуальное окружение
 
 ```
 python -m venv venv
 ```
+
 Aктивируем виртуальное окружение
 ```
 source venv/bin/activate # for linux
@@ -20,6 +22,11 @@ source venv/bin/activate # for linux
 Устанавливаем все зависимости:
 ```
 pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121 --extra-index-url https://pypi.org/simple
+```
+
+Исправляем небольшие проблемы:
+```
+python fix_libs.py
 ```
 
 Запускаем

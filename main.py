@@ -21,8 +21,7 @@ def upscale_images(input_dir, output_dir, target_height=16000):
 
     print("📦 Загрузка модели Real‑ESRGAN...")
     # Здесь укажи рабочий URL к весам или локальный путь:
-    model_path = r"D:\coding\\picture_upscaler\\models\\RealESRGAN_x4plus_anime_6B.pth"
-    # Можно вместо URL использовать локальный файл: r"D:\models\RealESRGAN_x4plus.pth"
+    model_path = r".\\models\\RealESRGAN_x4plus_anime_6B.pth"
 
 
     # Для anime 6B (портреты)

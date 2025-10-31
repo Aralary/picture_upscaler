@@ -1,5 +1,4 @@
 import os
-import time
 import torch
 import cv2
 import argparse
@@ -18,13 +17,14 @@ def upscale_images(input_dir, output_dir, anime, scale_setting):
     # Загрузка модели Real-ESRGAN
     print("📦 Загрузка модели Real-ESRGAN...")
 
+    model_dir = os.path.join(os.path.dirname(__file__), "models")
     if not anime:
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
-        model_path = "models\\RealESRGAN_x4plus.pth"
+        model_path = os.path.join(model_dir, "RealESRGAN_x4plus.pth")
     else:
         # anime model
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=6, num_grow_ch=32, scale=4)
-        model_path = "models\\RealESRGAN_x4plus_anime_6B.pth"
+        model_path = os.path.join(model_dir, "RealESRGAN_x4plus_anime_6B.pth")
 
 
     upsampler = RealESRGANer(

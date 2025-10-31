@@ -31,8 +31,9 @@ python fix_libs.py
 
 Запускаем
 ```
-python main.py --input_dir {input} --output_dir {output}
+python main.py --input_dir {input} --output_dir {output} --anime
 ```
 
 - input путь до директории с портретами
 - output путь до директории, в которую будут сохраняться результаты
+- флаг --anime лучше ставить если обрабатываете аниме картинки

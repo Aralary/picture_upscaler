@@ -16,6 +16,9 @@ def load_upsampler(anime: bool, device: torch.device):
                         num_block=23, num_grow_ch=32, scale=4)
 
     vram_gb = detect_vram()
+
+    if device == "cpu": vram_gb = 0
+        
     tile = auto_tile(vram_gb)
 
     upsampler = RealESRGANer(

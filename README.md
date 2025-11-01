@@ -1,11 +1,21 @@
 # picture_upscaler
-simple application for picture upscaling
+Приложение для повышения качества и разрешения картинок
 
 Модели взяты с сайта:
 https://github.com/xinntao/Real-ESRGAN/blob/master/docs/model_zoo.md
 
 
 # Использование
+Работает с NVIDIA CUDA 12.1
+
+Поддерживает видеокарты NVIDIA:
+- RTX 20xx
+- RTX 30xx
+- RTX 40xx
+- RTX 50xx под вопросом
+
+Также может работать на процессоре, если не поддерживается технология CUDA
+
 ## Запуск без Docker
 ### Создаем виртуальное окружение
 

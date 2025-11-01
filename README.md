@@ -27,18 +27,20 @@ pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu1
 
 ### Исправляем небольшие проблемы:
 ```
-python fix_libs.py
+python fix_scripts/fix_libs.py # for linux
+
+python fix_scripts\fix_libs.py # for windows
 ```
 
 ### Запускаем
 ```
-python main.py --input_dir {input} --output_dir {output} --scale {numX} --anime
+python main.py --input_dir {input} --output_dir {output} --scale {numX} {--anime}
 ```
 
 - флаг --input_dir путь до директории с портретами
 - флаг --output_dir путь до директории, в которую будут сохраняться результаты
 - флаг --scale задает до какого разрешения надо сделать upscale. Может принимать следующие значения: 2 , 4 , 8 , 16 которые означают upscale соответственно до (2к, 4к, 8к, 16к)
-- флаг --anime лучше ставить если обрабатываете аниме картинки
+- флаг --anime лучше ставить если обрабатываете аниме картинки. Необязательный флаг, влияющий на выбор модели
 
 ## Запуск c помощью Docker
 

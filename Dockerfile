@@ -18,6 +18,6 @@ RUN pip install --no-cache-dir -r requirements.txt \
     --index-url https://download.pytorch.org/whl/cu121 \
     --extra-index-url https://pypi.org/simple
 
-RUN python fix_libs_docker.py
+RUN python fix_scripts/fix_libs_docker.py
 
 ENTRYPOINT ["python", "main.py"]

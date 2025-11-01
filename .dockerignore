@@ -1,2 +1,6 @@
 venv
 .vscode
+.gitignore
+README.md
+upscale\__pycache__
+upscale/__pycache__

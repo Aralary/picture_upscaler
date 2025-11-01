@@ -2,3 +2,5 @@ input
 output
 venv
 .vscode
+upscale\__pycache__
+upscale/__pycache__
